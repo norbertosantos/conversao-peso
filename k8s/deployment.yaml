@@ -1,4 +1,4 @@
-# Deployment aplicação web conversão temperatura
+# Deployment aplicação web conversão peso
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -20,7 +20,7 @@ spec:
             - containerPort: 8081
 
 ---
-# Service para Deployment do conversao-temperatura
+# Service para Deployment do conversao-peso
 apiVersion: v1
 kind: Service
 metadata:
