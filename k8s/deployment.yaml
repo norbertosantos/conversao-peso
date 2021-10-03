@@ -17,7 +17,7 @@ spec:
         - name: web-conversao-peso
           image: norbertosantos/conversao-peso:v1
           ports:
-            - containerPort: 8081
+            - containerPort: 5000
 
 ---
 # Service para Deployment do conversao-peso
@@ -30,6 +30,6 @@ spec:
     app: web-conversao-peso
   ports:
     - port: 80
-      targetPort: 8081
+      targetPort: 5000
       nodePort: 30002
   type: NodePort 
