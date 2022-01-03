@@ -67,3 +67,9 @@ COPY --from=build /source/bin/ConversaoPeso.Web ./
 ```docker
 ENTRYPOINT ["dotnet", "ConversaoPeso.Web.dll" ]
 ```
+Para executar um container a partir da nossa imagem. Vamos utilizar o seguinte comando:
+
+```docker 
+docker container run -d -p 5000:80 --name conversao-peso <seu-repositorio>/conversao-peso:<tag>
+```
+
